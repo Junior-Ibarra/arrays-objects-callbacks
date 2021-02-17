@@ -14,8 +14,11 @@
   Then alert your name using dot notation.
 */ob
 
-//Code here
-
+let me={
+  name: 'Junior',
+  age: '34'
+}
+alert(me.name)
 ////////// PROBLEM 2 //////////
 
 /*
@@ -23,22 +26,26 @@
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
 
-//Code here
-
+let favoriteThings = {
+  band: 'Tom Petty and the Heart Breakers',
+  food: 'Pizza',
+  person: 'Wife',
+  book: 'The Dark Tower',
+  holiday: '4th of July'
+}
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
   and then another key named 'brand' with the value being your favorite brand.
 */
 
-//Code here
-
+favoriteThings.car = 'Chevy'
+favoriteThings.brand = 'Eddie Bauer'
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
-//Code here
-
+favoriteThings.food = 'Chicken Nuggets'
 ////////// PROBLEM 3 //////////
 
 /*
@@ -49,22 +56,25 @@
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack.
 */
 
-//Code here
+let backPack = {
+}
+let item = 'firstPocket'
+
+backPack.`${item}` = 'chapstick',
+backpack.color = 'brown'
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
-//Code here
-
+alert(backPack)
 /*
 You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console.
 */
 
-//Code here
-
+console.log(backPack)
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
@@ -95,8 +105,9 @@ var user2 = {
   Create an empty object called methodCollection.
 */
 
-//Code Here
-
+let methodCollection = {
+  
+}
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
